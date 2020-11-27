@@ -15,6 +15,29 @@ namespace WpfMVVMFirst.Model
         private int amount;
         private string country;
         private int tax;
+        public Customer(string name, int amount, string country)
+        {
+            Name = name;
+            Amount = amount;
+            Country = country;
+        }
+
+        public void CalculateTax()
+        {
+            if (Amount > 2000)
+            {
+                tax = 20;
+            }
+            else if (Amount > 1000)
+            {
+                tax = 10;
+            }
+            else
+            {
+                tax = 5;
+            }
+            NotifyPropertyChanged(nameof(Tax));//nameof(Tax) is hetzelfde als "Tax"
+        }
         public string Name
         {
             get { return name; }

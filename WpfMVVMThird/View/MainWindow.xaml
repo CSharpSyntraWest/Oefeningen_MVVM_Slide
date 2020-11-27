@@ -18,7 +18,7 @@
 
     </Window.Resources>
 
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" DataContext="{StaticResource StudentEnKlasViewModel}" >
+    <!--<Grid HorizontalAlignment="Center" VerticalAlignment="Center" DataContext="{StaticResource StudentEnKlasViewModel}" >
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
@@ -56,6 +56,6 @@
                 VerticalAlignment="Top"
                 Content="Wijzigen" />
 
-    </Grid>
+    </Grid>-->
 
 </Window>
