@@ -3,15 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfMVVMSecond"
+        xmlns:local="clr-namespace:WpfMVVMSecond" xmlns:viewmodel="clr-namespace:WpfMVVMSecond.ViewModel"
         mc:Ignorable="d"
        Title="MainWindow" Height="300" Width="300">
 
     <Window.Resources>
-        <!--<viewmodel:StudentenViewModel x:Key="StudentenViewModel"/>-->
+        <viewmodel:StudentenViewModel x:Key="StudentenViewModel"/>
     </Window.Resources>
 
-    <!--<DockPanel DataContext="{StaticResource StudentenViewModel}">
+    <DockPanel DataContext="{StaticResource StudentenViewModel}">
         <Button Content="Verwijderen" DockPanel.Dock="Bottom"
                 Command="{Binding DeleteStudentCommand}" />
         <Button Content="Toevoegen" DockPanel.Dock="Bottom"
@@ -20,7 +20,7 @@
         <DataGrid HorizontalAlignment="Center" VerticalAlignment="Top"
                   Margin="30"  SelectedItem="{Binding SelectedItem}" ItemsSource="{Binding Studenten}"/>
 
-    </DockPanel>-->
+    </DockPanel>
 
 </Window>
 
